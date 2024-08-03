@@ -1,0 +1,119 @@
+
+### User Management
+1. **User Registration API**
+   - **POST** `/api/users/register`
+   - Payload: `{ username, email, password }`
+   
+2. **User Login API**
+   - **POST** `/api/users/login`
+   - Payload: `{ email, password }`
+   
+3. **User Profile API**
+   - **GET** `/api/users/profile`
+   - Headers: `Authorization: Bearer <token>`
+
+### Product Management
+4. **Get All Products API**
+   - **GET** `/api/products`
+   
+5. **Get Product Details API**
+   - **GET** `/api/products/{productId}`
+   
+6. **Add New Product API** (Admin)
+   - **POST** `/api/products`
+   - Payload: `{ name, description, price, stock, image }`
+   
+7. **Update Product API** (Admin)
+   - **PUT** `/api/products/{productId}`
+   - Payload: `{ name, description, price, stock, image }`
+   
+8. **Delete Product API** (Admin)
+   - **DELETE** `/api/products/{productId}`
+
+### Order Management
+9. **Create Order API**
+   - **POST** `/api/orders`
+   - Payload: `{ userId, items: [{ productId, quantity }], totalPrice, address }`
+   
+10. **Get User Orders API**
+    - **GET** `/api/orders/user/{userId}`
+    
+11. **Get Order Details API**
+    - **GET** `/api/orders/{orderId}`
+    
+12. **Update Order Status API** (Admin)
+    - **PUT** `/api/orders/{orderId}/status`
+    - Payload: `{ status }`
+    
+### Cart Management
+13. **Add to Cart API**
+    - **POST** `/api/cart`
+    - Payload: `{ userId, productId, quantity }`
+    
+14. **Get Cart Items API**
+    - **GET** `/api/cart/{userId}`
+    
+15. **Update Cart Item Quantity API**
+    - **PUT** `/api/cart/{userId}/item/{itemId}`
+    - Payload: `{ quantity }`
+    
+16. **Remove Cart Item API**
+    - **DELETE** `/api/cart/{userId}/item/{itemId}`
+    
+### Payment Processing
+17. **Initiate Payment API**
+    - **POST** `/api/payments/initiate`
+    - Payload: `{ orderId, paymentMethod, amount }`
+    
+18. **Verify Payment API**
+    - **POST** `/api/payments/verify`
+    - Payload: `{ paymentId, orderId }`
+
+### Review and Rating
+19. **Add Review API**
+    - **POST** `/api/reviews`
+    - Payload: `{ userId, productId, rating, comment }`
+    
+20. **Get Product Reviews API**
+    - **GET** `/api/reviews/product/{productId}`
+    
+21. **Delete Review API** (User/Admin)
+    - **DELETE** `/api/reviews/{reviewId}`
+
+### Miscellaneous
+22. **Get Categories API**
+    - **GET** `/api/categories`
+    
+23. **Contact Us API**
+    - **POST** `/api/contact`
+    - Payload: `{ name, email, message }`
+
+### Analytics and Reporting (Admin)
+24. **Sales Report API**
+    - **GET** `/api/reports/sales`
+    
+25. **User Activity Report API**
+    - **GET** `/api/reports/user-activity`
+
+### Delivery Person Management
+26. **Register Delivery Person API**
+    - **POST** `/api/delivery/register`
+    - Payload: `{ name, phone, email, vehicleDetails }`
+    
+27. **Get All Delivery Persons API**
+    - **GET** `/api/delivery`
+    
+28. **Get Delivery Person Details API**
+    - **GET** `/api/delivery/{deliveryPersonId}`
+    
+29. **Update Delivery Person API**
+    - **PUT** `/api/delivery/{deliveryPersonId}`
+    - Payload: `{ name, phone, email, vehicleDetails }`
+    
+30. **Delete Delivery Person API**
+    - **DELETE** `/api/delivery/{deliveryPersonId}`
+
+31. **Assign Delivery Person to Order API**
+    - **POST** `/api/delivery/assign`
+    - Payload: `{ orderId, deliveryPersonId }`
+
