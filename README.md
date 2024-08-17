@@ -82,32 +82,32 @@
         ```bash
         npm start
         ```
-4. **Features:**
+## Features
 
-    - Admin Panel:
+- **Admin Panel:**
 
-        ```
+
         Manage ice cream products
         Track orders and delivery status
         View sales analytics
-        ```
-    - Customer Panel:
+        
+- **Customer Panel:**
 
-        ```
+        
         Browse and search for ice creams
         Add items to cart and place orders
         View order history
-        ```
-    - Delivery Person Panel:
+        
+- **Delivery Person Panel:**
 
-        ```
+        
         View assigned deliveries
         Mark deliveries as completed
         OTP verification for deliveries
-        ```
-    - Authentication:
+        
+- **Authentication:**
 
-        ```
+        
         JWT-based authentication and authorization
         Role-based access control
-        ```
+        
