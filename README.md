@@ -1,6 +1,6 @@
 # ScoopsNsmile - Online Ice Cream Shop
 
-![ScoopsNsmile Logo](link-to-your-logo.png) <!-- Add the logo image link here -->
+![ScoopsNsmile Logo](Frontend\public\images\title.png) <!-- Add the logo image link here -->
 
 ## Project Overview
 
@@ -18,11 +18,10 @@
 ## Table of Contents
 
 - [Installation](#installation)
-- [Project Structure](#project-structure)
 - [Features](#features)
-- [Usage](#usage)
+<!-- - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
+- [License](#license) -->
 
 ## Installation
 
@@ -83,25 +82,31 @@
         ```bash
         npm start
         ```
-4. **Features:**
+## Features
 
--Admin Panel:
+### Admin Panel:
 
-Manage ice cream products
-Track orders and delivery status
-View sales analytics
--Customer Panel:
+-   **Manage ice cream products**
+-   **Track orders and delivery status**
+-   **View sales analytics**
+        
+### Customer Panel:
 
-Browse and search for ice creams
-Add items to cart and place orders
-View order history
--Delivery Person Panel:
+        
+-   **Browse and search for ice creams**
+-   **Add items to cart and place orders**
+-   **View order history**
+        
+### Delivery Person Panel:
 
-View assigned deliveries
-Mark deliveries as completed
-OTP verification for deliveries
--Authentication:
+        
+-   **View assigned deliveries**
+-   **Mark deliveries as completed**
+-   **OTP verification for deliveries**
+        
+### Authentication:
 
-JWT-based authentication and authorization
-Role-based access control
-
+        
+-   **JWT-based authentication and authorization**
+-   **Role-based access control**
+        
