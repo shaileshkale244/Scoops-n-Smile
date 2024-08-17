@@ -1,6 +1,6 @@
 # ScoopsNsmile - Online Ice Cream Shop
 
-![ScoopsNsmile Logo](Frontend\public\images\title.png) <!-- Add the logo image link here -->
+![ScoopsNsmile Logo](Frontend/public/images/title.png) <!-- Add the logo image link here -->
 
 ## Project Overview
 
