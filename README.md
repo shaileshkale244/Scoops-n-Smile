@@ -84,30 +84,29 @@
         ```
 ## Features
 
-- **Admin Panel:**
+### Admin Panel:
 
-
-        Manage ice cream products
-        Track orders and delivery status
-        View sales analytics
+-   **Manage ice cream products**
+-   **Track orders and delivery status**
+-   **View sales analytics**
         
-- **Customer Panel:**
-
-        
-        Browse and search for ice creams
-        Add items to cart and place orders
-        View order history
-        
-- **Delivery Person Panel:**
+### Customer Panel:
 
         
-        View assigned deliveries
-        Mark deliveries as completed
-        OTP verification for deliveries
+-   **Browse and search for ice creams**
+-   **Add items to cart and place orders**
+-   **View order history**
         
-- **Authentication:**
+### Delivery Person Panel:
 
         
-        JWT-based authentication and authorization
-        Role-based access control
+-   **View assigned deliveries**
+-   **Mark deliveries as completed**
+-   **OTP verification for deliveries**
+        
+### Authentication:
+
+        
+-   **JWT-based authentication and authorization**
+-   **Role-based access control**
         
